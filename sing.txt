@@ -1,0 +1,47 @@
+class Terre{
+	double surface;
+	private static	Terre instance;
+ 
+ 	privte Terre(double surface){}
+
+	public static Terre getInstance(double s){
+			if(instance== null){
+
+		instance= new Terre(1000);
+		return instance;
+
+   }
+   }
+   }
+	 Terre t1= new Terre(1000);
+
+	 Terre t2= new Terre(2000);
+	1000	1000     2000 erreur de compilation
+ 	1000 	2000	 2000
+
+	Terre t1= Terre.getInstance(1000);
+	Terre t2= Terre.getInstance(2000);
+	1000   1000   2000
+	1000   2000   2000
+
+
+
+
+	class A{
+	  int b;
+private satatic A instance;
+	private A(int b){}
+
+	public static A getInstance(int b){
+if (instance= null){
+instance=new A;
+return instance;
+}
+	
+}
+ 	}
+
+
+(1- changer la visibilité du constrictor(private)
+2- ajouter un attribut (creation d'objet instance private static)
+3-  ajouter une methode (public static) )
